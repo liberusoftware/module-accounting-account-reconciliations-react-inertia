@@ -1,0 +1,45 @@
+{
+  "name": "@liberusoftware/module-boilerplate-react-inertia",
+  "version": "0.1.0-alpha.0",
+  "description": "Liberu Laravel \u00b7 Inertia \u00b7 React presentation module foundation",
+  "type": "module",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "@inertiajs/react": "^3.11.0",
+    "react": "^19.3.0"
+  },
+  "peerDependenciesMeta": {
+    "@inertiajs/react": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=26 <27"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liberusoftware/module-boilerplate-react-inertia.git"
+  }
+}
